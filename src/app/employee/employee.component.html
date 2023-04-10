@@ -1,0 +1,75 @@
+<nav class="navbar navbar-light">
+    <div class="container-fluid">
+      <h1 class="text">idsnext</h1>
+    </div>
+  </nav>
+  
+  <div class="container"> 
+   
+    <h4 ><b>Angular - Crud Operation </b> </h4> 
+   
+    <div class="row">
+        <div class="col">
+       
+          <form [formGroup]="formValue" >
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" formControlName="name" class="form-control" required>   <br/>
+          </div>
+          <div class="form-group">
+            <label for="designation">Designation</label>
+            <select id="designation" formControlName="designation" class="form-control" required>
+              <option>Manager</option>
+              <option>IT Manager</option>
+              <option>Developer</option>
+              <option>Coordinator</option>
+              
+            </select>
+            <br/>
+          </div>
+          <div class="form-group">
+              <label for="salary">Salary</label>
+              <input type="text" formControlName="salary" class="form-control" required>
+              <br/><br/>
+            </div>
+            <br/>
+            <button type="reset" class="btn btn-light" id="reset" >reset</button> 
+            <button type="submit" class="btn btn-light"  (click)="postEmployeeDetails()" id="save">Save</button>
+            <button type="update" id="save" *ngIf="showUpdate"  (click)="updateEmployeeDetails()" class="btn btn-light" style="margin-top: 10px;">Update</button>
+          </form>
+
+
+       </div>
+       
+       <div class="col col-md-offset-2">
+        <table class="table ">
+          <thead class="thead-light">
+    <tr class="table-active">
+        <th scope="col">Name</th>
+        <th scope="col">Designation</th>
+        <th scope="col">Salary</th>
+        <th scope="col">Action</th>
+        </tr>
+    </thead>
+
+
+<tbody>
+  <tr *ngFor="let row of employeeData">
+    <td>{{row.name}}</td>
+    <td>{{row.designation}}</td>
+    <td>{{row.salary}}</td>
+    <td>
+         
+          <button class="icon" (click)="deleteEmployee(row)"><i class="bi bi-trash3 " ></i></button>
+          <button class="icon"(click)="onEdit(row)"><i class="bi bi-pencil "></i></button>
+        </td>
+        </tr>
+
+</tbody>
+       </table>
+      </div>
+     
+    </div>
+    </div>
+    
+

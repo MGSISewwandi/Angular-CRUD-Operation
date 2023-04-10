@@ -1,0 +1,91 @@
+.body{
+    width: 100%;
+    height: 100%;
+}
+
+.text {
+    font: bold 30px Poppins;
+    font-family: 'Arial';
+    margin-left: 120px;
+   
+     background: linear-gradient(to right, #ff8a00 0%, #fc7439 100%);
+    background-clip: text;
+   -webkit-text-fill-color: transparent;
+}
+  
+.container{
+background-color:#f6f6f6;
+padding: 30px;
+margin-left: 120px;
+padding-bottom: 180px;
+
+}
+
+.row{
+    gap: 50px;
+    width: 100%;
+    position:relative;
+    }
+
+ .col{
+    background: rgb(255, 255, 255);
+    padding: 20px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 5px 15px;
+} 
+
+input,select{
+    height: 35px;
+    padding: 0 1rem;
+    border:1px solid rgb(206, 199, 199);
+    border-radius: .3rem;
+    width: 100%;
+    margin-top: 10px;
+    box-sizing: border-box;
+    display: inline-block;
+}
+
+#save{
+background-color: #fc7439;
+color: rgb(255, 255, 255);
+float: right;
+}
+
+#reset{
+    color: #fc7439;
+    border: 1px solid #fc7439;
+    margin-left: 200px;
+}
+
+.btn{
+    width: 30%;
+    margin-left: 20px;
+    justify-content: center;    
+}
+
+label{
+    color: #d7d8d5;
+}
+
+.table{
+width: 100%;
+align-items: left;
+padding: 20px;
+}
+
+.icon{
+    color: #fc7439;
+    border: none;
+    margin-right: 20px;
+    background-color: transparent;
+}
+
+thead{
+    text-align: left;
+    padding-top: 82px;
+    padding-bottom: 12px;
+    text-align: left;  
+}
+
+td,th{
+    padding: 10px;
+}

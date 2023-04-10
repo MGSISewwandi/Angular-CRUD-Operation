@@ -1,0 +1,26 @@
+{
+  "posts": [
+    {
+      "name": "Kiran",
+      "designation": "IT Manager",
+      "salary": "30000",
+      "id": 1
+    },
+    {
+      "name": "Joe Smith",
+      "designation": "Developer",
+      "salary": "20000",
+      "id": 2
+    },
+    {
+      "id": 3,
+      "name": "Andrewson",
+      "designation": "Manager",
+      "salary": "10000"
+    }
+  ],
+  "comments": [],
+  "profile": {
+    "name": "typicode"
+  }
+}
